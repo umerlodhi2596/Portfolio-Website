@@ -1,0 +1,144 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 5rem 6vw 2.2rem;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(204, 85, 0, 0.045)
+    );
+
+  border-top: 1px solid var(--line);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  padding-bottom: 3.2rem;
+}
+
+.footer-brand {
+  max-width: 340px;
+}
+
+.footer-brand .logo {
+  margin-bottom: 1.1rem;
+}
+
+.footer-brand p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+}
+
+.footer-col h4 {
+  margin: 0 0 1.2rem;
+
+  color: var(--orange-bright);
+
+  font-family: var(--mono);
+  font-size: 0.76rem;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-col a {
+  color: var(--muted);
+
+  font-size: 0.9rem;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.footer-col a:hover {
+  padding-left: 4px;
+
+  color: var(--orange-bright);
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--muted);
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  transition: all 0.25s ease;
+}
+
+.footer-social a:hover {
+  color: var(--orange-bright);
+
+  border-color: var(--orange-bright);
+
+  transform: translateY(-3px);
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  padding-top: 1.8rem;
+
+  color: var(--muted);
+
+  font-family: var(--mono);
+  font-size: 0.78rem;
+
+  border-top: 1px solid var(--line);
+}
+
+.footer-bottom .heart {
+  color: var(--orange-bright);
+}
+

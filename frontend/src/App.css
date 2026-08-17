@@ -1,0 +1,6 @@
+.about-text {
+  max-width: 65ch;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.02rem;
+}

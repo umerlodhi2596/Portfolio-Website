@@ -1,0 +1,40 @@
+:root {
+  --black: #0a0908;
+  --panel: #141210;
+  --panel-2: #1b1815;
+
+  --line: rgba(255, 140, 45, 0.14);
+
+  --orange: #cc5500;
+  --orange-bright: #ff7a1a;
+  --orange-dim: #8a3c0e;
+
+  --text: #f3ede4;
+  --muted: #9b9187;
+
+  --mono: "JetBrains Mono", monospace;
+  --display: "Space Grotesk", sans-serif;
+  --body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
