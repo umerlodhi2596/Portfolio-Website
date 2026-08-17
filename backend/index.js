@@ -17,7 +17,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5173", "https://devumer.netlify.app"],
+    origin: ["http://localhost:3000", "http://localhost:5173", "https://devumer.netlify.app", "https://admin-pan-portfolio.netlify.app/"],
     credentials: true,
   })
 );
