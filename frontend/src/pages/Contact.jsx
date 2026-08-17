@@ -3,6 +3,7 @@ import ContactIcon from "../components/ContactIcon";
 import { CONTACT_INFO } from "../data/contactInfo";
 import { toast } from "react-hot-toast";
 import "../styles/contact.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ export default function Contact() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/messages",
+        `${API_URL}/api/messages`,
         {
           method: "POST",
           headers: {
