@@ -34,7 +34,7 @@ export default function Contact() {
 
     try {
       const response = await fetch(
-        `${API_URL}/api/messages`,
+        `${API_URL}/messages`,
         {
           method: "POST",
           headers: {
