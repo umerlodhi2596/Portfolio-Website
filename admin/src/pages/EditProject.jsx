@@ -13,7 +13,6 @@ const EditProject = () => {
   const [form, setForm] = useState({
     title: "",
     description: "",
-    image: "",
     technologies: "",
     githubUrl: "",
     liveUrl: "",
@@ -35,7 +34,6 @@ const EditProject = () => {
           title: project.title || "",
           description:
             project.description || "",
-          image: project.image || "",
           technologies:
             project.technologies?.join(", ") || "",
           githubUrl:
@@ -121,16 +119,6 @@ const EditProject = () => {
             onChange={handleChange}
             rows="5"
             required
-          />
-        </div>
-
-        <div className="form-group">
-          <label>Image URL</label>
-
-          <input
-            name="image"
-            value={form.image}
-            onChange={handleChange}
           />
         </div>
 
