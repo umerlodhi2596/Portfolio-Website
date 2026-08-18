@@ -12,6 +12,7 @@ const EditProject = () => {
 
   const [form, setForm] = useState({
     title: "",
+    subtitle: "",
     description: "",
     technologies: "",
     githubUrl: "",
@@ -32,6 +33,7 @@ const EditProject = () => {
 
         setForm({
           title: project.title || "",
+          subtitle: project.subtitle || "",
           description:
             project.description || "",
           technologies:
@@ -111,6 +113,17 @@ const EditProject = () => {
         </div>
 
         <div className="form-group">
+          <label>Project Subtitle</label>
+
+          <input
+            name="subtitle"
+            value={form.subtitle}
+            onChange={handleChange}
+            placeholder="Enter project subtitle"
+          />
+        </div>
+
+        <div className="form-group">
           <label>Description</label>
 
           <textarea
@@ -129,6 +142,7 @@ const EditProject = () => {
             name="technologies"
             value={form.technologies}
             onChange={handleChange}
+            placeholder="React, Node.js, MongoDB"
           />
         </div>
 
